@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 1110px;
+}
+/*font-family: "Open Sans", sans-serif;
+font-family: "Oswald", sans-serif;*/
+.header {
+}
+.header_title {
+}
+.logo {
+}
+.burger {
+}
+.burger_line {
+}
+.h1 {
+}
+.h4 {
+}
