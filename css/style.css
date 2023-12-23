@@ -12,8 +12,7 @@ body {
   font-weight: 400;
 }
 .container {
-  max-width: 1100px;
-  background-color: #ddd;
+  max-width: 1110px;
   margin: 0 auto;
 }
 :root {
@@ -49,16 +48,62 @@ body {
   line-height: 21px;
 }
 .header {
+  min-height: 740px;
+  background-image: url(../img/first_screen_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header_title {
+  padding-top: 20px;
+  margin-bottom: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .logo {
+  width: 60px;
+  height: 60px;
 }
 .burger {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 0;
+  background-color: var(--accent-color);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .burger_line {
+  display: block;
+  width: 21px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 4px;
+}
+.burger_line:last-child {
+  margin-bottom: 0;
 }
 .h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  max-width: 734px;
+  margin: 0 auto 16px;
+  color: var(--white-color);
 }
 .h4 {
+  /* margin-top: 20px; */
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 734px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white-color);
 }
