@@ -12,7 +12,7 @@ h3,
 h4,
 h5,
 h6,
-# {
+p {
   padding: 0;
   margin: 0;
 }
@@ -116,4 +116,63 @@ body {
   margin: 0 auto;
   text-align: center;
   color: var(--white-color);
+}
+.about {
+  min-height: 1080px;
+  position: relative;
+}
+.info {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  max-width: 1110px;
+  min-height: 300px;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 64px 130px;
+}
+.about_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.about_grid_item {
+  border: 1px solid red;
+  text-align: center;
+  width: 190px;
+}
+.about_h4 {
+  color: var(--accent-color);
+  font-size: 72px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.about_h5 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about_p {
+  color: var(--gray-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1280px) {
+  .about_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 568px) {
+  .info {
+    position: relative;
+  }
+  .about_grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
